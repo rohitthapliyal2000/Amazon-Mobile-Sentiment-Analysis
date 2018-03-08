@@ -2,11 +2,11 @@
 
 ### Desciption :
 
-*This project works by scraping Amazon reviews for the user-desired mobile phone.
+This project works by scraping Amazon reviews for the user-desired mobile phone.
 
 The first part includes searching the phone and scraping the reviews using infinite scrolling.
 
-The second part includes training of NaiveBayesClassifier model on dataset and classifying the product reviews.*
+The second part includes training of NaiveBayesClassifier model on dataset and classifying the product reviews.
 
 ### Tasks :
 
