@@ -44,14 +44,15 @@ The second part includes training of NaiveBayesClassifier model on dataset and c
 	
 	$ sudo apt-get install libxml2-dev libxslt1-dev python-dev
 
-	$ pip install lxml
+	$ pip3 install lxml
 
 *NLTK :*
 	
-	$ pip install nltk
+	$ pip3 install nltk
 	
 *To download nltk data, run following command on Python :*
 
 	import nltk
+	nltk.download()
 
-*Select ALL from the pop-up GUI*
+*Select ALL and download from the pop-up GUI*
