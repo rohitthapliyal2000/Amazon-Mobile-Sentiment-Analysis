@@ -20,7 +20,7 @@ def sentiment_analysis(all_reviews):
 	time.sleep(2)
 	print("\n\nTraining the algorithm with review dataset...")
 	time.sleep(2)
-	root = ET.parse('myfile.xml').getroot()
+	root = ET.parse('../dataset/set1.xml').getroot()
 
 	reviews = []
 	sentiment = []
@@ -49,10 +49,9 @@ def sentiment_analysis(all_reviews):
 
 	progress_bar.progress(10, 100)
 
-	with open('emos.txt', 'r') as file:
+	with open('../dataset/emoji.txt', 'r') as file:
 		for line in file:
 			line = line.split()
-			#print(line.split())
 			emo = ""
 			for subset in range(0, len(line) - 1):
 				emo += line[subset]
@@ -63,7 +62,7 @@ def sentiment_analysis(all_reviews):
 
 	progress_bar.progress(33.33, 100)
 
-	root = ET.parse('test.xml').getroot()
+	root = ET.parse('../dataset/set2.xml').getroot()
 
 	reviews = []
 	sentiment = []
