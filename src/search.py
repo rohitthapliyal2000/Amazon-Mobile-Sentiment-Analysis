@@ -26,6 +26,14 @@ def get_first_from_search(info) :
 
 	tree = html.fromstring(page.content)
 
+	name = tree.xpath('//*[@id="result_0"]/div/div[3]/div[1]/a/h2/text()')
+
+	if len(name) == 0:
+		print("\nError\nPossible errors : Incorrect input/Connectivity problem/Product irrelevant\n")
+		sys.exit(0)
+	
+	print("\nShowing results for", name[0])
+
 	data = tree.xpath("//a[@class='a-size-small a-link-normal a-text-normal']")
 
 	ans = ""
