@@ -1,6 +1,6 @@
 import search
-import training_module
-import reviews
+import opinion_mining_training_module
+import review_scrap
 import sys
 
 info = input("\nEnter info : ")
@@ -11,6 +11,6 @@ if (review_tab == ""):
 	print("\nError\nPossible errors : Incorrect input/Connectivity problem/Product irrelevant\n")
 	sys.exit(0)
 
-review_list = reviews.get_reviews(review_tab)
+review_list = review_scrap.get_reviews(review_tab)
 
-training_module.sentiment_analysis(review_list)
+opinion_mining_training_module.sentiment_analysis(review_list)
